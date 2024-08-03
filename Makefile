@@ -24,8 +24,4 @@ format:
 lint:
 	pylint --disable=R,C *.py
 
-<<<<<<< HEAD
 all: install lint test format
-=======
-all: install lint test format
->>>>>>> refs/remotes/origin/main
