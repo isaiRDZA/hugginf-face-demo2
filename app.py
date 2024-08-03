@@ -8,7 +8,7 @@ def predict(prompt):
     return summary
 
 with gr.Blocks() as demo:
-    textbox = ge.textbox(placeholder = "Enter text block to summarize", lines = 4)
+    textbox = gr.Textbox(placeholder = "Enter text block to summarize", lines = 4)
     gr.Interface(fn=predict, inputs = textbox, outputs = "text")
 
 
